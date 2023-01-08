@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Jefferson</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <script src="../Js/app.js"></script>
+</head>
+<body>
+    <script>
+        //contenedor para donde se va a guardar el cv
+        var contentGeneral = createTag("div");
+        // Se crea el header
+        var header = createTag("header");
+        // DIV PARA CONTENER LA FOTO DE SARAH 
+        var contenedorFotoSarah = createTag("div");
+        var fotoSarah = createTagImg ("../Recurses/Sarah.jpg")
+
+        //Contendero para nombre y profesionde sarah
+        var contenedorNameProfession = createTag("div");
+        var saraName = createTagText("h1","SARAH JEFFERSON");
+        var sarahProfession = createTagText("h3","Desinger");
+
+        //contenedor para la informacion del cv 
+        var divInformation = createTag("div");
+        //Nombre 
+        var nameOf = createTag("p")
+        var nameOfStrong = createTagText("strong","Name: ");
+        var nameOfOutStrong = createTagText("a","JEFERSON SARAH.");
+        //Cumpleaños
+        var birth = createTag("p")
+        var birthStrong = createTagText("strong","Date of birth: ");
+        var birthOutStrong = createTagText("a","June 6,1970.");
+        //Direccion 
+        var address = createTag("p")
+        var addressStrong = createTagText("strong","Address: ");
+        var addressOutStrong = createTagText("a","San Francisco, CA 94102,US.");
+        //Celular 
+        var phone = createTag("p")
+        var phoneStrong = createTagText("strong","Phone: ");
+        var phoneOutStrong = createTagText("a","+1-541-754-3010.");
+
+        //Email
+        var email = createTag("p")
+        var emailStrong = createTagText("strong","Email: ");
+        var emailOutStrong = createTagText("a","wpspacetemplates@gmail.com.");
+
+        //Sitio web
+        var webSite = createTag("p")
+        var webSiteStrong = createTagText("strong","Web site: ");
+        var webSiteOutStrong = createTagText("a","http://themfores.net/user/themerex.");
+        
+
+        //lorem
+        var loremText = createTagText("p","Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero, cum laborum facere adipisci incidunt impedit consectetur dolor vitae officia magnam id saepe est hic reiciendis eveniet iusto a temporibus! Unde quos a repellendus recusandae voluptatum quidem voluptas minus maxime, enim soluta quo animi dolore dolorum amet! Saepe earum vel quae, velit beatae deserunt tempora aut minus totam repellendus illo.");
+
+        var hr  = createTag("hr")
+        //Creamos el contenedor para los box
+        var container = createTag("div");
+        var box1 = createTag("div");
+
+
+        var fondoNegro = createTag("div");
+        var parteAzul = createTag("div");
+        var imagenFlecha = createTagImg("../Recurses/Flecha.png")
+        var parteText = createTag("div");
+        var employment = createTagText("h3","EMPLOYMENT");
+        var titulos = createTag("div");
+        var radio = createTag("div");
+        var flechaDerecha = createTagImg("../Recurses/flecha derecha.png");
+
+        //elementos del primer titulo 
+        var there = createTag("div");
+        var thereH2 = createTagText("h2","There are many variations of passages");
+        var gris= createTagText("h5"," Director Of Departament")
+        var years1 = createTag("div");
+        var yerars1H2 = createTagText("h2","2003-2007")
+        //fuera de el permer titulo 
+        var seccion1  = createTag("section")
+        var loremInsideSeccion1 = createTagText("p","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi consectetur, quae possimus atque alias sint distinctio optio consequuntur incidunt accusantium, quibusdam architecto esse sequi, facere quod dolor quia at hic!")
+        var titulosDos = createTag("div");
+
+        //elementos de los titulos
+        var radioDos = createTag("div");
+        var flechaDerechaDos = createTagImg("../Recurses/flecha derecha.png");
+        //elementos del primer titulo 
+        var thereDos = createTag("div");
+        var thereH2Dos = createTagText("h2","Cooper Union");
+        var grisDos= createTagText("h5"," Programmer")
+        var years1Dos = createTag("div");
+        var yerars1H2Dos = createTagText("h2","2001- present")
+        //segunda parte de la primera sección
+        var fondoNegro2 = createTag("div");
+        var parteAzul2 = createTag("div");
+        var imagenFlecha2 = createTagImg("../Recurses/Flecha.png")
+        var parteText2 = createTag("div");
+        var employment2 = createTagText("h3","EDUCATION");
+
+        //Estudios
+        var titulos2 = createTag("div");
+        var radio2 = createTag("div");
+        var there_2 = createTag("div");
+        var thereH2_2 = createTagText("h2","Lorem Contary to popular belief");
+        var gris_2= createTagText("h5"," Web desing")
+        var years1_2 = createTag("div");
+        var yerars1H2_2 = createTagText("h2","1999-2001")
+        var seccion2  = createTag("section")
+        //sestudios2.0
+
+        var titulos3 = createTag("div");
+        var radio3 = createTag("div");
+        var there_3 = createTag("div");
+        var thereH2_3 = createTagText("h2","Lorem Ipsum is Simply dummy text");
+        var gris_3= createTagText("h5"," Graphic Desing")
+        var years1_3 = createTag("div");
+        var yerars1H2_3 = createTagText("h2","2001- present")
+        var seccion3  = createTag("section")
+
+        //creamos las cards 
+        var cards = createTag("div");
+        var programing = createTagText("h3","PROGRAMMING SKILLS");
+        var wordpress = createTagText("p","Wordpress");
+        var progress_1 = createTag("div");
+        var progress_file_1 = createTag("div")
+        var porcentaje_1 = createTagText("p","90%");
+        //php
+        var php = createTagText("p","PHP");
+        var progress_2 = createTag("div");
+        var progress_file_2 = createTag("div")
+        var porcentaje_2 = createTagText("p","80%");
+        //html
+        var html = createTagText("p","HTML")
+        var progress_3 = createTag("div")
+        var progress_file_3 = createTag("div")
+        var procentaje_3 = createTagText("p","90%")
+        //css
+        var css = createTagText("p","CSS")
+        var progress_4= createTag("div")
+        var progress_file_4 = createTag("div")
+        var procentaje_4 = createTagText("p","80%")
+        //sql
+        var sql = createTagText("p","MYSQL")
+        var progress_5= createTag("div")
+        var progress_file_5 = createTag("div")
+        var procentaje_5 = createTagText("p","70%")
+
+        //Graphic skills
+        var graphic = createTagText("h3","GRAPHIC SKILLS")
+        //adobe photoshop
+        var cuadrados1 = createTag("div")
+        var cuadro1 = createTag("div")
+        var texto_1 =  createTagText("div","Adobe Photoshop")
+        //Adobe Ilustrator
+        var cuadrados2 = createTag("div")
+        var cuadro2 = createTag("div")
+        var texto_2 =  createTagText("div","Ilustrator")
+
+        //Adobre indiseing 
+        var cuadrados3 = createTag("div");
+        var cuadro3 = createTag("div");
+        var texto_3 =  createTagText("div","Adobe Indesing");
+
+        //Core draw 
+        var cuadrados4 = createTag("div");
+        var cuadro4 = createTag("div");
+        var texto_4 =  createTagText("div","Core Draw");
+        
+        //3D MAX 
+        var cuadrados5 = createTag("div");
+        var cuadro5 = createTag("div");
+        var texto_5 =  createTagText("div","3D max");
+
+        var lenguajesSkills = createTagText("h3","LENGUAJE SKILLS") 
+        
+        //ENGLISH
+        var cicules1 = createTag("div");
+        var circulo1= createTag("div");
+        var ciculo1_Texto = createTagText("div","English")
+
+        var separador = createTag("br");
+
+
+        //french
+        var cicules2 = createTag("div");
+        var circulo2= createTag("div");
+        var ciculo2_Texto = createTagText("div","French")
+
+        //spanish
+        var cicules3 = createTag("div");
+        var circulo3= createTag("div");
+        var ciculo3_Texto = createTagText("div","Spanish")
+
+        //circulo Blanco reutilizable
+        var circuloBlanco = createTag("div");
+
+
+
+        //Añadimos las clases a los elementos
+        contentGeneral.classList.add("content-general");
+        sarahProfession.classList.add("azulado");
+        divInformation.classList.add("div-information");
+        webSiteOutStrong.classList.add("azulado");
+
+        container.classList.add("container");
+        box1.classList.add("box1");
+        fondoNegro.classList.add("fondonegro");
+        parteAzul.classList.add("parteAzul");
+
+        titulos.classList.add("titulos");
+
+        radio.classList.add("radio");
+        flechaDerecha.classList.add("flechaDerecha");
+
+        gris.classList.add("gris")
+        yerars1H2.classList.add("gris")
+
+        titulosDos.classList.add("titulos");
+
+        radioDos.classList.add("radio");
+        flechaDerechaDos.classList.add("flechaDerecha");
+
+        grisDos.classList.add("gris")
+        yerars1H2Dos.classList.add("gris")
+        //CLases segunda parte 
+        titulos2.classList.add("titulos")
+        fondoNegro2.classList.add("fondonegro");
+        parteAzul2.classList.add("parteVerde");
+
+        radio2.classList.add("radio2");
+        yerars1H2_2.classList.add("gris")
+
+        titulos3.classList.add("titulos")
+        radio3.classList.add("radio2");
+        yerars1H2_3.classList.add("gris")
+
+
+        cards.classList.add("cards")
+        progress_1.classList.add("progreess");
+        progress_file_1.classList.add("progress__fill");
+
+        progress_2.classList.add("progreess");
+        progress_file_2.classList.add("progress__fill_1")
+
+        progress_3.classList.add("progreess");
+        progress_file_3.classList.add("progress__fill_2")
+
+        progress_4.classList.add("progreess");
+        progress_file_4.classList.add("progress__fill_3")
+
+        progress_5.classList.add("progreess");
+        progress_file_5.classList.add("progress__fill_4")
+
+        cuadrados1.classList.add("cuadrados");
+        cuadro1.classList.add("cuadrado");
+        
+        cuadrados2.classList.add("cuadrados");
+        cuadro2.classList.add("cuadrado_2");
+
+        cuadrados3.classList.add("cuadrados");
+        cuadro3.classList.add("cuadrado_3");
+
+        cuadrados4.classList.add("cuadrados");
+        cuadro4.classList.add("cuadrado_4");
+
+        cuadrados5.classList.add("cuadrados");
+        cuadro5.classList.add("cuadrado_5");
+
+        cicules1.classList.add("cirules")
+        cicules2.classList.add("cirules")
+        cicules3.classList.add("cirules")
+        
+        ciculo1_Texto.classList.add("ciculo1_Texto")
+        ciculo2_Texto.classList.add("ciculo2_Texto")
+        ciculo3_Texto.classList.add("ciculo3_Texto")
+
+        circulo1.classList.add("circulo1")
+        circulo2.classList.add("circulo2")
+        circulo3.classList.add("circulo3")
+        circuloBlanco.classList.add("circule-white")
+
+       
+       
+        
+        
+
+
+
+
+        addElementContainer(contentGeneral,header)
+        //Foto de sarah 
+        addElementContainer(header,contenedorFotoSarah)
+        addElementContainer(contenedorFotoSarah,fotoSarah)
+        //Nombre y profession
+        addElementContainer(header,contenedorNameProfession)
+        addElementContainer(contenedorNameProfession,saraName)
+        addElementContainer(contenedorNameProfession,sarahProfession)
+        //Datos de la persona
+          
+        addElementContainer(header,divInformation)
+            //Nombre
+        addElementContainer(nameOf,nameOfStrong)
+        addElementContainer(nameOf,nameOfOutStrong)
+        addElementContainer(divInformation,nameOf)
+            //Fecha de cumpelaños
+        addElementContainer(birth,birthStrong)
+        addElementContainer(birth,birthOutStrong)
+        addElementContainer(divInformation,birth)
+            //Direccion
+        addElementContainer(address,addressStrong)
+        addElementContainer(address,addressOutStrong)
+        addElementContainer(divInformation,address)
+            //Phone
+        addElementContainer(phone,phoneStrong)
+        addElementContainer(phone,phoneOutStrong)
+        addElementContainer(divInformation,phone)
+            //Email
+        addElementContainer(email,emailStrong)
+        addElementContainer(email,emailOutStrong)
+        addElementContainer(divInformation,email)
+            //webSite
+        addElementContainer(webSite,webSiteStrong)
+        addElementContainer(webSite,webSiteOutStrong)
+        addElementContainer(divInformation,webSite)
+
+        //añadir lorem y hr
+        addElementContainer(contentGeneral,loremText)
+        addElementContainer(contentGeneral,hr)
+        
+
+        //añadimos los elementos del container 
+        addElementContainer(fondoNegro,parteAzul)
+        addElementContainer(parteAzul,imagenFlecha)
+        
+        
+        addElementContainer(parteText,employment)
+        addElementContainer(fondoNegro,parteText)
+
+
+        
+        
+
+        addElementContainer(box1,fondoNegro)
+        addElementContainer(radio,flechaDerecha)
+        addElementContainer(titulos,radio)
+
+        addElementContainer(radioDos,flechaDerechaDos)
+        addElementContainer(titulosDos,radioDos)
+
+        addElementContainer(there,thereH2)
+        addElementContainer(there,gris)
+        addElementContainer(titulos,there)
+        addElementContainer(years1,yerars1H2)
+        addElementContainer(titulos,years1)
+
+
+        addElementContainer(thereDos,thereH2Dos)
+        addElementContainer(thereDos,grisDos)
+        addElementContainer(titulosDos,thereDos)
+        addElementContainer(years1Dos,yerars1H2Dos)
+        addElementContainer(titulosDos,years1Dos)
+
+
+
+        
+        addElementContainer(box1,titulos)
+        addElementContainer(box1,seccion1)
+        addElementContainer(seccion1,loremInsideSeccion1.cloneNode(true)) 
+
+       
+        addElementContainer(box1,hr.cloneNode(true))
+        addElementContainer(box1,titulosDos)
+        addElementContainer(box1,seccion1.cloneNode(true))
+        
+     
+
+        
+        //añadimos el contaier al contenedor general
+        
+        addElementContainer(container,box1);
+        addElementContainer(contentGeneral,container);
+        //segunda seecion parte dos 
+
+        addElementContainer(fondoNegro2,parteAzul2);
+        addElementContainer(parteAzul2,imagenFlecha2);
+        
+        
+        addElementContainer(radio2,flechaDerecha.cloneNode(true))
+        addElementContainer(titulos2,radio2)
+        addElementContainer(there_2,thereH2_2)
+        addElementContainer(there_2,gris_2)
+        addElementContainer(titulos2,there_2)
+        addElementContainer(years1_2,yerars1H2_2)
+        addElementContainer(titulos2,years1_2)
+        
+        addElementContainer(seccion2,loremInsideSeccion1.cloneNode(true)) 
+
+        addElementContainer(radio3,flechaDerecha.cloneNode(true))
+        addElementContainer(titulos3,radio3)
+        addElementContainer(there_3,thereH2_3)
+        addElementContainer(there_3,gris_3)
+        addElementContainer(titulos3,there_3)
+        addElementContainer(years1_3,yerars1H2_3)
+        addElementContainer(titulos3,years1_3)
+
+        
+        
+        addElementContainer(parteText2,employment2);
+        addElementContainer(fondoNegro2,parteText2);
+        addElementContainer(box1,fondoNegro2);
+        
+        addElementContainer(box1,titulos2);
+        addElementContainer(box1,seccion2);
+        addElementContainer(box1,hr.cloneNode(true));
+        addElementContainer(box1,titulos3);
+        addElementContainer(box1,seccion2.cloneNode(true));
+        addElementContainer(cards,programing);
+
+        addElementContainer(progress_file_1,porcentaje_1);
+        addElementContainer(progress_1,progress_file_1);
+
+
+        addElementContainer(progress_file_2,porcentaje_2);
+        addElementContainer(progress_2,progress_file_2);
+
+        addElementContainer(progress_file_3,procentaje_3);
+        addElementContainer(progress_3,progress_file_3);
+
+        addElementContainer(progress_file_4,procentaje_4);
+        addElementContainer(progress_4,progress_file_4);
+
+        addElementContainer(progress_file_5,procentaje_5);
+        addElementContainer(progress_5,progress_file_5);
+
+
+        addElementContainer(cards,wordpress);
+        addElementContainer(cards,progress_1);
+
+        addElementContainer(cards,php);
+        addElementContainer(cards,progress_2);
+
+        addElementContainer(cards,html);
+        addElementContainer(cards,progress_3);
+
+        addElementContainer(cards,css);
+        addElementContainer(cards,progress_4);
+
+       
+
+        addElementContainer(cards,sql);
+        addElementContainer(cards,progress_5);
+        addElementContainer(cards,cuadrados1)
+        addElementContainer(cards,graphic);
+
+        addElementContainer(cuadrados1,cuadro1);
+        addElementContainer(cuadrados1,texto_1);
+        addElementContainer(cards,cuadrados1);
+
+        addElementContainer(cuadrados2,cuadro2);
+        addElementContainer(cuadrados2,texto_2);
+        addElementContainer(cards,cuadrados2);
+        
+        addElementContainer(cuadrados3,cuadro3);
+        addElementContainer(cuadrados3,texto_3);
+        addElementContainer(cards,cuadrados3);
+
+        addElementContainer(cuadrados4,cuadro4);
+        addElementContainer(cuadrados4,texto_4);
+        addElementContainer(cards,cuadrados4);
+
+        addElementContainer(cuadrados5,cuadro5);
+        addElementContainer(cuadrados5,texto_5);
+        addElementContainer(cards,cuadrados5);
+
+        addElementContainer(cards,lenguajesSkills);
+        addElementContainer(cicules1,ciculo1_Texto)
+        
+        addElementContainer(cicules1,circulo1)
+        addElementContainer(cicules1,circulo1.cloneNode(true));
+        addElementContainer(cicules1,circulo1.cloneNode(true));
+        addElementContainer(cicules1,circulo1.cloneNode(true));
+        addElementContainer(cicules1,circuloBlanco);
+
+        addElementContainer(cards,cicules1)
+        addElementContainer(cards,separador)
+
+        addElementContainer(cicules2,ciculo2_Texto)
+        addElementContainer(cicules2,circulo2)
+        addElementContainer(cicules2,circulo2.cloneNode(true));
+        addElementContainer(cicules2,circulo2.cloneNode(true));
+        addElementContainer(cicules2,circuloBlanco.cloneNode(true));
+        addElementContainer(cicules2,circuloBlanco.cloneNode(true));
+        addElementContainer(cards,cicules2)
+
+
+        addElementContainer(cards,separador.cloneNode(true))
+        addElementContainer(cicules3,ciculo3_Texto)
+        addElementContainer(cicules3,circulo3.cloneNode(true))
+        addElementContainer(cicules3,circulo3.cloneNode(true));
+        addElementContainer(cicules3,circulo3.cloneNode(true))
+        addElementContainer(cicules3,circulo3.cloneNode(true));
+        
+        addElementContainer(cicules3,circuloBlanco.cloneNode(true));
+        
+        addElementContainer(cards,cicules3)
+
+
+        
+        
+
+        addElementContainer(container,cards);
+        
+
+
+
+
+
+        
+
+        addElement(contentGeneral)
+
+    </script>
+    
+</body>
+</html>
